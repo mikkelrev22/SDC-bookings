@@ -1,5 +1,5 @@
 #CSV file
-data.csv
+*.csv
 # Logs
 logs
 *.log
