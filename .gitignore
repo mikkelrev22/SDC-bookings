@@ -1,5 +1,7 @@
-#CSV file
+#CSV files
 *.csv
+#postgres password
+server/secret.js
 # Logs
 logs
 *.log
