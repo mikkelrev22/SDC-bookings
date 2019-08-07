@@ -8,14 +8,11 @@ app.use("/:id", express.static(__dirname + "/../client/public"));
 app.use(bodyParse.json());
 
 const pool = new Pool({
-    host: "ec2-54-190-29-199.us-west-2.compute.amazonaws.com",
+    host: "ec2-34-214-151-224.us-west-2.compute.amazonaws.com",
     database: "postgres",
-    username: "postgres",
-    password: password.secret, 
+    user: "postgres",
+    password: password.secrets, 
     port: 5432,
-    max: 20,
-    idleTimeoutMillis: 30000,
-    connectionTimeoutMillis: 2000,
 });
 
 pool.on('error', () => {
@@ -34,7 +31,7 @@ app.get('/getrentaldata/:id', (req, res) => {
            if (err) {
                console.log(`error with getting all fields by id from rental_price_info between server and db`, err);
            }
-           res.send(results)
+           res.send(results.rows)
        }
    );  
 })
@@ -46,7 +43,7 @@ app.get('/getavailabilitydata/:id', (req, res) => {
             if (err) {
                 console.log(`err getting data from rental_availability between server and db`, err);
             }
-            res.send(results)
+            res.send(results.rows)
         }
     )
 })
