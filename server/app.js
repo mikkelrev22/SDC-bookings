@@ -8,10 +8,10 @@ app.use("/:id", express.static(__dirname + "/../client/public"));
 app.use(bodyParse.json());
 
 const pool = new Pool({
-    host: "localhost",
+    host: "ec2-54-190-29-199.us-west-2.compute.amazonaws.com",
     database: "postgres",
-    username: "mikkelrev",
-    password: password.secret,
+    username: "postgres",
+    password: password.secret, 
     port: 5432,
     max: 20,
     idleTimeoutMillis: 30000,
