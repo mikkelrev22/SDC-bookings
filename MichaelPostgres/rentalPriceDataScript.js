@@ -30,16 +30,16 @@ const table1DataGenerator = (start, end) => {
 // }
 
 const appendToCSVFile = () => {
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(100, 1000100)}`) 
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(1000100, 2000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(2000100, 3000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(3000100, 4000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(4000100, 5000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(5000100, 6000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(6000100, 7000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(7000100, 8000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(8000100, 9000100)}`)
-  appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(9000100, 10000100)}`)
+  appendFileSync(__dirname + '/rentalPriceDataTable2.csv', `${table1DataGenerator(100, 10100)}`) 
+  // appendFileSync(__dirname + '/rentalPriceDataTable2.csv', `${table1DataGenerator(1000100, 2000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(2000100, 3000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(3000100, 4000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(4000100, 5000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(5000100, 6000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(6000100, 7000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(7000100, 8000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(8000100, 9000100)}`)
+  // appendFileSync(__dirname + '/rentalPriceDataTable.csv', `${table1DataGenerator(9000100, 10000100)}`)
 }
 
 appendToCSVFile()

@@ -1,5 +1,4 @@
 const express = require('express');
-// const mysql = require('mysql');
 const bodyParse = require('body-parser');
 const app = express();
 const { Pool } = require('pg')
@@ -22,12 +21,6 @@ const pool = new Pool({
 pool.on('error', () => {
     process.exit(-1);
   });
-// connection.connect((err) => {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log("Connected to MySQL DB");
-// });
 
 app.get('/getrentaldata/:id', (req, res) => {
    //this routes the request which comes from the 
@@ -56,7 +49,6 @@ app.get('/getavailabilitydata/:id', (req, res) => {
             res.send(results)
         }
     )
-// pool.end()
 })
 
 app.listen(PORT, ()=>{console.log(`Listening on ${PORT}`)});

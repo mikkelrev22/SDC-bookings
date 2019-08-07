@@ -30,10 +30,10 @@ const table2DataGenerator = (start, end, idValue) => {
 //   table2DataGenerator((start, end, start))
 // }
 const appendToCSVFile = () => { 
-appendFileSync(__dirname + '/rentalAvailabilityDataTable.csv', 'id,rental_date,price,available,views,rental_id')
-for (let i = 0; i < 100; i++) {
-  let bookings = table2DataGenerator((i*100000)+100, ((i+1)*100000)+100, (i*100000*30)+100)
-  appendFileSync(__dirname + '/rentalAvailabilityDataTable.csv', bookings)
+appendFileSync(__dirname + '/rentalAvailabilityDataTable2.csv', 'id,rental_date,price,available,views,rental_id')
+for (let i = 0; i < 1; i++) {
+  let bookings = table2DataGenerator((i*10000)+100, ((i+1)*10000)+100, (i*10000*30)+100)
+  appendFileSync(__dirname + '/rentalAvailabilityDataTable2.csv', bookings)
 }
 }
 appendToCSVFile()
