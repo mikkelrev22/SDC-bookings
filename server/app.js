@@ -4,6 +4,9 @@ const app = express();
 const { Pool } = require('pg')
 const PORT = 3000;
 const password = require('./secret.js')
+const morgan = require('morgan')
+
+app.use(morgan('dev'))
 app.use("/:id", express.static(__dirname + "/../client/public"));
 app.use(bodyParse.json());
 
