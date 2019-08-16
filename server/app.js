@@ -16,6 +16,8 @@ const pool = new Pool({
     user: "postgres",
     password: password.secrets, 
     port: 5432,
+    max: 520,
+    min: 4,
 });
 
 pool.on('error', () => {
