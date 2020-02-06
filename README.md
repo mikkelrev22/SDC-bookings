@@ -22,6 +22,8 @@ The guest module allows the users to select the number of adults, children and i
 ### Calendar Module
 IN PROGRESS
 
-
-
+### Backend
+- Added 10 million primary records to PostgreSQL database
+- Containerized PostgreSQL & front-end with Docker
+- Deployed Servers and NGINX load balancer
 
